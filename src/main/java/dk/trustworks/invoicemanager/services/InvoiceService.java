@@ -25,7 +25,7 @@ public class InvoiceService extends DefaultLocalService {
         int month = jsonNode.get("month").asInt();
         int year = jsonNode.get("year").asInt();
 
-        invoiceRepository.findByProjectUUIDAndMonthAndYear()
+        //invoiceRepository.findByProjectUUIDAndMonthAndYear()
 
         RestClient restClient = new RestClient();
         Project project = restClient.getProjectByUUID(jsonNode.get("projectuuid").asText());
